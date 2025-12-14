@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Section Container */
+        .skills-section {
+            background: white;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            width: 90%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        /* Language Card */
+        .lang-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none; /* Removes underline from link */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hover Effects */
+        .lang-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #007bff;
+        }
+
+        /* Icons */
+        .lang-card i {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .lang-card:hover i {
+            color: #007bff;
+        }
+
+        /* Text */
+        .lang-card span {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="skills-section">
+        <h2>Languages</h2>
+        <div class="grid-container">
+            
+            <a href="https://en.cppreference.com/w/c" target="_blank" class="lang-card">
+                <i class="fa-solid fa-c"></i>
+                <span>C</span>
+            </a>
+
+            <a href="https://isocpp.org/" target="_blank" class="lang-card">
+                <i class="fa-brands fa-cuttlefish"></i> <span>C++</span>
+            </a>
+
+            <a href="https://www.python.org/" target="_blank" class="lang-card">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+            </a>
+
+            <a href="https://www.java.com/" target="_blank" class="lang-card">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+            </a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="lang-card">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </a>
+
+            <a href="https://www.rust-lang.org/" target="_blank" class="lang-card">
+                <i class="fa-brands fa-rust"></i>
+                <span>Rust</span>
+            </a>
+
+            <a href="https://www.w3schools.com/sql/" target="_blank" class="lang-card">
+                <i class="fa-solid fa-database"></i>
+                <span>SQL</span>
+            </a>
+
+            <a href="https://www.php.net/" target="_blank" class="lang-card">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+            </a>
+
+            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="lang-card">
+                <i class="fa-brands fa-microsoft"></i> 
+                <span>C#</span>
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>
